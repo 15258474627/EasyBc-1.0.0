@@ -1,0 +1,50 @@
+{
+  "name": "esaybc",
+  "version": "1.0.0",
+  "description": "a tiny block chain client",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^2.6.1",
+    "async-eventemitter": "^0.2.4",
+    "axios": "^0.18.0",
+    "bn.js": "^4.11.8",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "flow-stoplight": "^1.0.0",
+    "functional-red-black-tree": "^1.0.1",
+    "keccak": "^2.0.0",
+    "leveldown": "^4.0.1",
+    "levelup": "^4.0.0",
+    "log4js": "^3.0.6",
+    "merkle-patricia-tree": "^3.0.0",
+    "request": "^2.88.0",
+    "rlp": "^2.2.1",
+    "safe-buffer": "^5.1.2",
+    "secp256k1": "^3.6.1",
+    "semaphore": "^1.1.0",
+    "strip-hex-prefix": "^1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "server": "node server/index.js",
+    "client": "node client/index.js",
+    "dev": "node index.js",
+    "testUtil": "node utils/test/index.js",
+    "testTransaction": "node transaction/test/index.js",
+    "testDb": "node db/test/index.js",
+    "testBlockChain": "node block_chain/test/index.js",
+    "testAccount": "node account/test/index.js",
+    "testBlock": "node block/test/index.js",
+    "testServer": "mocha server/test/index.js",
+    "test": "node utils/test/index.js && node transaction/test/index.js && node db/test/index.js && node block_chain/test/index.js && node account/test/index.js && node block/test/index.js && mocha server/test/index.js"
+  },
+  "keywords": [
+    "block",
+    "chain"
+  ],
+  "author": "walker",
+  "license": "ISC",
+  "nodeVersion": "v10.15.0"
+}
